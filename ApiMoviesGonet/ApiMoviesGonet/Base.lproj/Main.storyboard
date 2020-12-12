@@ -30,19 +30,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="plO-Li-Xeq"/>
                                 </connections>
                             </searchBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tym-vx-KTC">
-                                <rect key="frame" x="0.0" y="188" width="414" height="29"/>
-                                <segments>
-                                    <segment title="Favorite"/>
-                                    <segment title="Recommendations"/>
-                                    <segment title="Rated"/>
-                                </segments>
-                                <connections>
-                                    <action selector="controlButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="fEl-Fr-LOm"/>
-                                </connections>
-                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-Z7-W1e">
-                                <rect key="frame" x="0.0" y="224" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="188" width="414" height="708"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="ocQ-7G-D7J" detailTextLabel="fDc-A7-OZp" style="IBUITableViewCellStyleSubtitle" id="mcj-LE-1TU">
@@ -74,22 +63,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="qr9-Z7-W1e" secondAttribute="bottom" constant="-34" id="0Lt-Tz-aRZ"/>
-                            <constraint firstItem="tym-vx-KTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ahd-41-b34"/>
-                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hf9-4n-bPT"/>
-                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="byb-Xe-OHC"/>
-                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="top" secondItem="tym-vx-KTC" secondAttribute="bottom" constant="8" id="c04-3N-unL"/>
-                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ckP-G2-H0L"/>
-                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dGE-9j-b2K"/>
-                            <constraint firstItem="tym-vx-KTC" firstAttribute="top" secondItem="HRv-tQ-sqx" secondAttribute="bottom" id="fMd-LK-cKh"/>
-                            <constraint firstItem="tym-vx-KTC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="frP-3J-mbo"/>
-                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tQI-LW-cJv"/>
+                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5rV-y6-8qx"/>
+                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="top" secondItem="HRv-tQ-sqx" secondAttribute="bottom" id="7RF-6f-S3b"/>
+                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7qf-rt-PCC"/>
+                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="top" secondItem="HRv-tQ-sqx" secondAttribute="bottom" id="Iuj-fE-Kzb"/>
+                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JXR-eJ-NEE"/>
+                            <constraint firstItem="qr9-Z7-W1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pie-qa-KgJ"/>
+                            <constraint firstAttribute="bottom" secondItem="qr9-Z7-W1e" secondAttribute="bottom" id="Wj3-KM-9fh"/>
+                            <constraint firstItem="HRv-tQ-sqx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gw3-89-7PD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Peliculas o series" id="Jse-Sv-5aD"/>
                     <connections>
-                        <outlet property="controlCategory" destination="tym-vx-KTC" id="ulM-Ck-ob5"/>
                         <outlet property="searchItem" destination="HRv-tQ-sqx" id="KfQ-IN-bVq"/>
                         <outlet property="tableItems" destination="qr9-Z7-W1e" id="5Di-T2-o5S"/>
                         <segue destination="LCm-nK-ml2" kind="show" identifier="detalle" id="3Is-xr-OOc"/>

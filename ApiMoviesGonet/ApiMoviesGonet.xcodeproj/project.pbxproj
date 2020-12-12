@@ -14,6 +14,8 @@
 		3A24F62925804FE000248CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A24F62725804FE000248CEF /* LaunchScreen.storyboard */; };
 		3A24F63125809D5E00248CEF /* ItemMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24F63025809D5E00248CEF /* ItemMovie.swift */; };
 		3A24F63525814CA500248CEF /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24F63425814CA500248CEF /* ItemViewController.swift */; };
+		3A7E86D92583DBE5006D38EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E86D82583DBE5006D38EB /* NetworkManager.swift */; };
+		3A7E86DB2583E239006D38EB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E86DA2583E239006D38EB /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3A24F62A25804FE000248CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A24F63025809D5E00248CEF /* ItemMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMovie.swift; sourceTree = "<group>"; };
 		3A24F63425814CA500248CEF /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		3A7E86D82583DBE5006D38EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3A7E86DA2583E239006D38EB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				3A24F62025804FD000248CEF /* ViewController.swift */,
 				3A24F63025809D5E00248CEF /* ItemMovie.swift */,
 				3A24F63425814CA500248CEF /* ItemViewController.swift */,
+				3A7E86D82583DBE5006D38EB /* NetworkManager.swift */,
+				3A7E86DA2583E239006D38EB /* Service.swift */,
 				3A24F62225804FD000248CEF /* Main.storyboard */,
 				3A24F62525804FE000248CEF /* Assets.xcassets */,
 				3A24F62725804FE000248CEF /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			files = (
 				3A24F62125804FD000248CEF /* ViewController.swift in Sources */,
 				3A24F63525814CA500248CEF /* ItemViewController.swift in Sources */,
+				3A7E86D92583DBE5006D38EB /* NetworkManager.swift in Sources */,
 				3A24F61F25804FD000248CEF /* AppDelegate.swift in Sources */,
 				3A24F63125809D5E00248CEF /* ItemMovie.swift in Sources */,
+				3A7E86DB2583E239006D38EB /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
